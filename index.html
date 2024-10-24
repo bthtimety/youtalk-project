@@ -9,7 +9,6 @@
     <title>Youtalk</title>
 
     <link rel="stylesheet" href="./css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,7 +19,7 @@
 
     <header class="header">
         <div class="header__container">
-            <img class="header__logo" src="./img/logo.svg" alt="logo">
+            <a href="./index.html"><img class="header__logo" src="./img/logo.svg" alt="logo"></a>
             <nav class="header__nav">
                 <ul>
                     <li class="header__link"><a href="#">О нас</a></li>
@@ -49,21 +48,23 @@
     <div class="header-line"></div>
 
     <main class="blog">
-        <nav class="blog__menu">
+        <nav class="blog__nav">
             <ul>
-                <li class="blog__link">
-                    <a href="#">
-                    Главная &gt;
-                    </a>
-                </li>
+                <li class="blog__link"><a href="#">Главная</a></li>
                 <li class="blog__link"><a href="#">Блог</a></li>
             </ul>
         </nav>
         <h1 class="blog__header">Блог</h1>
         <div class="article-filter">
-            <span class="article-filter__item">Все</span>
+            <span class="article-filter__item">
+                <img class="article-filter__icon" src="./img/all_filter_icon.svg" alt="all-filter icon">
+                Все
+            </span>
             <span class="article-filter__item">Самооценка и самопринятие</span>
-            <span class="article-filter__item">Self</span>
+            <span class="article-filter__item article-filter__item_selected">
+                <img class="article-filter__icon" src="./img/self_filter_icon.svg" alt="self-filer icon">
+                Self
+            </span>
             <span class="article-filter__item">Чувства и эмоции</span>
             <span class="article-filter__item">Тревога</span>
             <span class="article-filter__item">Упражнения</span>
@@ -98,9 +99,14 @@
             </div>
         </section>
         <button class="button blog__button">Еще</button>
+
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+
+
+    </footer>
 
 </body>
 
