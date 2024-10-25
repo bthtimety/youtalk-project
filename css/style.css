@@ -49,8 +49,11 @@
     text-align: center;
 }
 
-.header__link > a {
+a {
     text-decoration: none;
+}
+
+.header__link > a {
     color: #333333;
     font-size: 14px;
     font-weight: 500;
@@ -75,7 +78,7 @@
 
 .header__button:hover {
     background-color: #35B3A9;
-    color: white;
+    color: #FFFFFF;
 }
 
 .header__toggle {
@@ -110,7 +113,6 @@
 }
 
 .blog__link > a {
-    text-decoration: none;
     color: #333333;
     opacity: 70%;
     font-size: 12px;
@@ -131,32 +133,24 @@
     margin-top: 24px;
 }
 
-.article-filter {
+.button-section {
     display: flex;
-    margin-top: 24px;
-    gap: 8px;
-    overflow-x: auto;
-    scrollbar-width: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.article-filter__item {
-    border: 1px solid #C1C5CD;
-    border-radius: 24px;
-    padding: 6px 8px;
-    font-size: 14px;
-    font-weight: 600;
+.button-section__item {
+    border-radius: 4px;
+    padding: 12px 72.5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #35B3A9;
+    color: #FFFFFF;
 }
 
-.article-filter__item:hover {
-    border: 2px solid #16C8BB;
-}
-
-.article-filter__item_selected {
-    border: 2px solid #16C8BB;
-}
-
-.article-filter__icon {
-
+.button-section__item:hover {
+    background-color: #E3F5F5;
+    color: #03B2A5;
 }
 
 /* iPhone 11 Pro Max */
