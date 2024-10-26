@@ -30,9 +30,7 @@
                     <li class="header__link">
                         <a href="#">
                             Материалы
-                            <button class="button header__toggle">
-                                <img src="./img/toggle.svg" alt="toggle">
-                            </button>
+                            <img class="header__toggle" src="./img/toggle.svg" alt="toggle">
                         </a>
                     </li>
                     <li class="header__link"><a href="#">FAQ</a></li>
@@ -48,6 +46,7 @@
     <div class="header-line"></div>
 
     <main class="blog">
+
         <nav class="blog__nav">
             <ul>
                 <li class="blog__link"><a href="#">Главная</a></li>
@@ -55,6 +54,28 @@
             </ul>
         </nav>
         <h1 class="blog__header">Блог</h1>
+
+        <div class="article-filter">
+            <span class="article-filter__item">
+                <a href="#">
+                    <img class="article-filter__icon" src="./img/all_filter_icon.svg" alt="smile icon">
+                    Все
+                </a>
+            </span>
+            <span class="article-filter__item"><a href="#">Самооценка и самопринятие</a></span>
+            <span class="article-filter__item article-filter__item_selected">
+                <a href="#">
+                    <img class="article-filter__icon" src="./img/self_filter_icon.svg" alt="unicorn icon">
+                    Self
+                </a>
+            </span>
+            <span class="article-filter__item"><a href="#">Чувства и эмоции</a></span>
+            <span class="article-filter__item"><a href="#">Тревога</a></span>
+            <span class="article-filter__item"><a href="#">Упражнения</a></span>
+            <span class="article-filter__item"><a href="#">Психология питания</a></span>
+            <span class="article-filter__item"><a href="#">Насилие</a></span>
+            <span class="article-filter__item"><a href="#">Личное здоровье</a></span>
+        </div>
 
         <section class="article-section">
             <div class="article">
@@ -82,6 +103,7 @@
 
             </div>
         </section>
+
         <div class="button-section">
             <button class="button button-section__item">Еще</button>
         </div>
