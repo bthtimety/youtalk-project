@@ -12,7 +12,7 @@
     ". header ."
     "header_line header_line header_line"
     ". main ."
-    ". footer .";
+    "footer footer footer";
 }
 
 .header {
@@ -198,11 +198,80 @@ a {
     "article_body"
 }
 
+.article:hover {
+    cursor: pointer;
+}
+
 .article:nth-child(n+5) {
     display: none;
 }
 
+.article__tag {
+    position: absolute;
+    margin-left: 8px;
+}
 
+.article__tag > span {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 4px;
+    color: #333333;
+    font-weight: 600;
+    padding: 6px 8px;
+    margin-top: 8px;
+    background-color: #FFFFFFB3;
+    border: 1px solid #C1C5CD;
+    border-radius: 24px;
+}
+
+.article__img {
+    grid-area: article_img;
+    display: flex;
+    width: 100%;
+}
+
+.article__img > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.article__body {
+    grid-area: article_body;
+    border: 1px solid #DEDEDE;
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    height: 240px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.article__header {
+    font-size: 18px;
+    color: #333333;
+}
+
+.article__author {
+    font-size: 12px;
+    color: #494949;
+    margin-top: 4px;
+}
+
+.article__text {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 8px;
+}
+
+.article__date {
+    font-size: 12px;
+    color: #333333;
+    margin-top: auto;
+}
 
 .button-section {
     display: flex;
@@ -212,6 +281,7 @@ a {
 
 .button-section__item {
     margin-top: 28px;
+    margin-bottom: 59px;
     border-radius: 4px;
     padding: 12px 72.5px;
     font-size: 16px;
@@ -223,6 +293,11 @@ a {
 .button-section__item:hover {
     background-color: #E3F5F5;
     color: #03B2A5;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2963A3;
 }
 
 /* iPhone 11 Pro Max */
@@ -299,6 +374,7 @@ a {
 
     .button-section__item {
         margin-top: 33px;
+        margin-bottom: 55px;
     }
 
 }
@@ -334,6 +410,7 @@ a {
 
     .button-section__item {
         margin-top: 48px;
+        margin-bottom: 60px;
     }
 
 }
@@ -364,6 +441,7 @@ a {
 
     .button-section__item {
         margin-top: 56px;
+        margin-bottom: 96px;
     }
 
 }
