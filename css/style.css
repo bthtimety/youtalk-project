@@ -6,7 +6,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: minmax(16px, auto) minmax(296px, 1200px) minmax(16px, auto);
+    grid-template-columns: minmax(16px, auto) minmax(288px, 1200px) minmax(16px, auto);
     grid-template-rows: auto 1px 1fr auto;
     grid-template-areas:
         ". header ."
@@ -116,8 +116,7 @@ a {
 }
 
 .blog__link > a {
-    color: #333333;
-    opacity: 70%;
+    color: rgba(51, 51, 51, 0.7);
     font-size: 12px;
     font-weight: 400;
 }
@@ -221,7 +220,7 @@ a {
     font-size: 14px;
     padding: 6px 8px;
     margin-top: 8px;
-    background-color: #FFFFFFB3;
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid #C1C5CD;
     border-radius: 24px;
 }
@@ -306,6 +305,121 @@ a {
     margin: 0 auto;
 }
 
+.footer__sections {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 23px;
+    margin-top: 35px;
+}
+
+.footer__nav-section {
+    grid-column: span 6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__link {
+    list-style: none;
+}
+
+.footer__link > a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__input-section {
+    grid-column: span 6;
+}
+
+.input__header {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input__container {
+    position: relative;
+    display: flex;
+    margin-top: 8px;
+}
+
+.input__container > input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    height: 48px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.input__container > input::placeholder {
+    color: #9D9D9D;
+}
+
+.input__container > input:focus {
+    color: #333333;
+}
+
+.input__button {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 48px;
+    width: 64px;
+}
+
+.input__description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.footer__icons-section {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icons__social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(157, 157, 157, 0.2);
+    margin-top: 20px;
+}
+
+.footer__copyright-and-documents {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+    margin-bottom: 37px;
+}
+
+.footer__copyright-and-documents > span > a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 300;
+}
+
 /* iPhone 11 Pro Max */
 @media screen and (min-width: 414px) {
 
@@ -332,6 +446,10 @@ a {
 
     .footer__container {
         max-width: 375px;
+    }
+
+    .input__button {
+        display: block;
     }
 
 }
@@ -391,6 +509,39 @@ a {
         max-width: 728px;
     }
 
+    .footer__sections {
+        column-gap: 31px;
+        row-gap: 26px;
+    }
+
+    .footer__nav-section {
+        grid-column: span 2;
+    }
+
+    .footer__input-section {
+        grid-column: span 4;
+    }
+
+    .input__description {
+        margin-top: 8px;
+    }
+
+    .footer__icons-section {
+        grid-column: span 2;
+        gap: 40px;
+    }
+
+    .footer__line {
+        margin-top: 27px;
+    }
+
+    .footer__copyright-and-documents {
+        flex-direction: row;
+        gap: 48px;
+        margin-top: 16px;
+        margin-bottom: 23px;
+    }
+
 }
 
 /* iPad Pro */
@@ -431,6 +582,31 @@ a {
         max-width: 960px;
     }
 
+    .footer__sections {
+        gap: 21px;
+        margin-top: 40px;
+    }
+
+    .footer__nav-section {
+        grid-column: span 2;
+    }
+
+    .footer__input-section {
+        grid-column: span 3;
+    }
+
+    .footer__icons-section {
+        grid-column: span 1;
+    }
+
+    .footer__line {
+        margin-top: 24px;
+    }
+
+    .footer__copyright-and-documents {
+        margin-bottom: 17px;
+    }
+
 }
 
 /* Desktop */
@@ -464,6 +640,10 @@ a {
 
     .footer__container {
         max-width: 1200px;
+    }
+
+    .footer__sections {
+        gap: 91.5px;
     }
 
 }
