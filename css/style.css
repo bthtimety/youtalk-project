@@ -121,7 +121,7 @@ a {
     font-weight: 400;
 }
 
-.blog__link:first-child::after {
+.blog__link:not(:last-child)::after {
     content: " ";
     background-image: url("../img/arrow.svg");
     background-position: center;
@@ -197,8 +197,8 @@ a {
         "article_body";
 }
 
-.article:hover {
-    cursor: pointer;
+.article__header > a {
+    color: #333333;
 }
 
 .article:nth-child(n+5) {
