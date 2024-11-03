@@ -382,7 +382,76 @@ p {
     margin-top: 8px;
 }
 
+.paragraph-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.paragraph-grid__item {
+    max-width: 288px;
+}
+
+.paragraph-grid__item > img {
+    width: 100%;
+}
+
+.paragraph-grid__item > p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.article-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-list {
+    display: none;
+    max-width: 690px;
+}
+
+.tag-list > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-list__item {
+    list-style: none;
+    color: #2963A3;
+    font-size: 14px;
+    font-weight: 400;
+    text-wrap: nowrap;
+}
+
+.tag-list__item:not(:last-child)::after {
+    content: "·";
+    margin-left: 8px;
+    color: #2963A3;
+}
+
+.article__line {
+    display: none;
+    height: 1px;
+    width: 100%;
+    background-color: #DEDEDE;
+    margin-top: 48px;
+}
+
+.article__feedback {
+    display: none;
+    margin-top: 72px;
+    gap: 303px;
+}
+
 .footer {
+    margin-top: 60px;
     grid-area: footer;
     background-color: #2963A3;
     display: grid;
@@ -593,6 +662,22 @@ p {
         width: 374px;
     }
 
+    .paragraph-grid {
+        gap: 24px;
+    }
+
+    .paragraph-grid__item {
+        max-width: 374px;
+    }
+
+    .paragraph-grid__item > p {
+        margin-top: 16px;
+    }
+
+    .footer {
+        margin-top: 127px;
+    }
+
     .input__button {
         display: block;
     }
@@ -671,6 +756,24 @@ p {
 
     .exercise-block {
         padding: 24px;
+    }
+
+    .paragraph-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .paragraph-grid__item {
+        max-width: 356px;
+    }
+
+    .paragraph-grid__item > p {
+        margin-top: 24px;
+    }
+
+    .footer {
+        margin-top: 59px;
     }
 
     .footer__sections {
@@ -761,6 +864,18 @@ p {
         gap: 24px;
     }
 
+    .paragraph-grid {
+        gap: 24px;
+    }
+
+    .paragraph-grid__item {
+        max-width: 345px;
+    }
+
+    .footer {
+        margin-top: 71px;
+    }
+
     .footer__sections {
         gap: 21px;
         margin-top: 40px;
@@ -844,6 +959,26 @@ p {
 
     .paragraph-with-background__container > p {
         width: 485px;
+    }
+
+    .paragraph-grid__item {
+        max-width: 333px;
+    }
+
+    .tag-list {
+        display: block;
+    }
+
+    .article__line {
+        display: block;
+    }
+
+    .article__feedback {
+        display: flex;
+    }
+
+    .footer {
+        margin-top: 108px;
     }
 
     .footer__sections {
