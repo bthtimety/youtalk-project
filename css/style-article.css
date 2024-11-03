@@ -450,6 +450,33 @@ p {
     gap: 303px;
 }
 
+.feedback__body > h1 {
+    color: #333333;
+    font-size: 48px;
+}
+
+.feedback__body > p {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+.article__button {
+    margin-top: 32px;
+    border-radius: 4px;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #16C8BB;
+    color: #FFFFFF;
+}
+
+.article__button:hover {
+    background-color: #E3F5F5;
+    color: #03B2A5;
+}
+
 .footer {
     margin-top: 60px;
     grid-area: footer;
