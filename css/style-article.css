@@ -496,6 +496,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 24px;
 }
 
 .aside__card1 {
@@ -518,17 +519,12 @@ p {
     width: 100%;
 }
 
-/*.card1__img > img {*/
-/*    object-fit: cover;*/
-/*    width: 100%;*/
-/*    max-height: 100%;*/
-/*}*/
-
 .card__body1 {
     grid-area: card_body;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -555,6 +551,134 @@ p {
     color: #FFFFFF;
 }
 
+.aside__card2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 206px 1fr;
+    grid-template-areas:
+        "card_img"
+        "card_body";
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+}
+
+.card__tag {
+    position: absolute;
+    margin-left: 16px;
+}
+
+.card__tag > span {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 3px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 6px;
+    margin-top: 8px;
+    background-color: rgba(243, 244, 248, 0.7);
+    border-radius: 6px;
+}
+
+.card__img2 {
+    grid-area: card_img;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.card__img2 > img {
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.card__psychologist {
+    margin-top: 16px;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__job {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card__experience {
+    color: #A2A7B1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card__line {
+    height: 1px;
+    width: 100%;
+    background-color: #DEDEDE;
+}
+
+.card__body2 {
+    grid-area: card_body;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 36px;
+    padding: 16px;
+}
+
+.card__work-list {
+    align-self: flex-start;
+    margin-top: 16px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card__body2 > ul {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.work-list__item {
+    align-self: flex-start;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.work-list__item::marker {
+    color: #03B2A5;
+    font-size: 20px;
+}
+
+.aside__card3 {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/aside-img/2-iphoneSE.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    height: 280px;
+}
+
+.aside__card3 > h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 60px;
+    font-size: 32px;
+    width: 253px;
+}
 
 .footer {
     margin-top: 60px;
@@ -784,6 +908,15 @@ p {
         gap: 56px;
     }
 
+    .card__work-list {
+        align-self: center;
+    }
+
+    .aside__card3 {
+        background-image: url("../img/aside-img/2-iphone11.png");
+        height: 292px;
+    }
+
     .footer {
         margin-top: 127px;
     }
@@ -884,6 +1017,11 @@ p {
 
     .article-page {
         gap: 23px;
+    }
+
+    .aside__card3 {
+        background-image: url("../img/aside-img/2-ipad-mini.png");
+        height: 242px;
     }
 
     .footer {
@@ -1002,6 +1140,19 @@ p {
     .aside__card1 {
         grid-template-rows: 145px 1fr;
         margin-top: 88px;
+    }
+
+    .card__work-list {
+        align-self: flex-start;
+    }
+
+    .aside__card3 {
+        background-image: url("../img/aside-img/2-ipad-pro.png");
+        height: 292px;
+    }
+
+    .aside__card3 > h2 {
+        width: 161px;
     }
 
     .footer {
@@ -1123,6 +1274,11 @@ p {
 
     .aside__card1 {
         grid-template-rows: 206px 1fr;
+    }
+
+    .aside__card3 {
+        background-image: url("../img/aside-img/2-desktop.png");
+        height: 280px;
     }
 
     .footer {
