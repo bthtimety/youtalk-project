@@ -743,6 +743,10 @@ p {
     margin-bottom: 32px;
 }
 
+.blog__bg1, .blog__bg2 {
+    display: none;
+}
+
 .footer {
     margin-top: 60px;
     grid-area: footer;
@@ -1369,6 +1373,20 @@ p {
     .aside__card3 {
         background-image: url("../img/aside-img/2-desktop.png");
         height: 280px;
+    }
+
+    .blog__bg1 {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 2100px;
+    }
+
+    .blog__bg2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 4750px;
     }
 
     .footer {
